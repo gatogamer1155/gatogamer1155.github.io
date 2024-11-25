@@ -1,0 +1,33 @@
+---
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <script>
+        // List of random URLs
+        const randomUrls = [
+            "https://zishanadthandar.github.io/",
+            "https://zishanadthandar.github.io/pentest/notes/BugBountyHuntingMethodology.html",
+            "https://zishanadthandar.github.io/pentest/notes/ActiveDirectory.html",
+            "https://github.com/ZishanAdThandar/",
+            "https://www.linkedin.com/in/zishanadthandar/",
+            "https://app.hackthebox.com/users/4477"
+        ];
+
+        // Redirect to a random URL
+        window.onload = function() {
+            const randomIndex = Math.floor(Math.random() * randomUrls.length);
+            const redirectUrl = randomUrls[randomIndex];
+            window.location.href = redirectUrl;
+        };
+    </script>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, <a href="https://zishanadthandar.github.io/">click here</a>.</p>
+</body>
+</html>
